@@ -232,7 +232,7 @@ class VagrantLxcBoot:
                 "VAGRANT_DEFAULT_PROVIDER": "lxc",
                 # when running celery in daemon mode. this environment does
                 # not exists. it is needed for vagrant.
-                "HOME": "/home/{0}".format(getpass.getuser()),
+                "HOME": expanduser("~"),
                 self.MANAGEMENT_IP: self.management_ip,
                 self.BROKER_URL: "amqp://guest:guest@{0}:5672//".format(self.management_ip),
                 self.RIEMANN_PID: riemann_info[self.RIEMANN_PID],

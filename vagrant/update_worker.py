@@ -14,8 +14,6 @@
 #    * limitations under the License.
 # *******************************************************************************/
 
-import os
-
 __author__ = 'elip'
 
 def update_worker():
